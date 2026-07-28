@@ -18,6 +18,54 @@ Create a Python function get_exchange_rate(currency) that stores sample exchange
 Define the function schema, send the user's query to the Chat Completion API, allow the LLM to invoke the appropriate function, parse the function arguments, execute the Python function, and display the JSON response.
 
 ### PROGRAM:
+```python
+import os
+import openai
+
+from dotenv import load_dotenv, find_dotenv
+_ = load_dotenv(find_dotenv()) 
+openai.api_key = os.environ['OPENAI_API_KEY']
+```
+```python
+import json
+
+def get_exchange_rate(currency):
+    """Get the exchange rate of a currency to INR"""
+
+    exchange_rates = {
+        "USD": 87.50,
+        "EUR": 102.30,
+        "GBP": 118.40,
+        "JPY": 0.59
+    }
+
+    result = {
+        "currency": currency,
+        "exchange_rate": exchange_rates.get(currency, "Not Available"),
+        "base_currency": "INR"
+    }
+
+    return json.dumps(result)
+```
+```python
+functions = [
+    {
+        "name": "get_exchange_rate",
+        "description": "Get the current exchange rate of a currency to INR.",
+        "parameters": {
+            "type": "object",
+            "properties": {
+                "currency": {
+                    "type": "string",
+                    "description": "Currency code (e.g., USD, EUR, GBP, JPY)"
+                }
+            },
+            "required": ["currency"]
+        }
+    }
+]
+```
+
 
 ### OUTPUT:
 
