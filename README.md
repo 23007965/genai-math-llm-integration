@@ -1,4 +1,4 @@
-## Integration of a Mathematical Calulations with a Chat Completion System using LLM Function-Calling
+## Integration of Currency Exchange with a Chat Completion System using LLM Function Calling
 
 ### AIM:
 To design and implement a Python function for retrieving the exchange rate of a currency and integrate it with a Chat Completion System using the Function Calling feature of a Large Language Model (LLM).
@@ -111,3 +111,4 @@ print(function_response)
 ### OUTPUT:
 
 ### RESULT:
+The currency exchange function was successfully integrated with the Chat Completion System using the Function Calling feature of an LLM. The model correctly identified the required function, passed the appropriate parameter, executed the Python function, and returned the exchange rate as a structured JSON response.
