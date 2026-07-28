@@ -110,5 +110,17 @@ print(function_response)
 ```
 ### OUTPUT:
 
+#### OpenAI API Response
+
+<img width="1005" height="691" alt="GENAI1" src="https://github.com/user-attachments/assets/91894fd6-897e-43cb-a0f3-66a4923350dc" />
+
+#### Assistant Message with Function Call
+<img width="650" height="177" alt="GENAI2" src="https://github.com/user-attachments/assets/b42459b3-8916-4d60-a50c-4371be39726d" />
+
+#### Extracted Function Call Details
+<img width="573" height="71" alt="GENAI3" src="https://github.com/user-attachments/assets/861d3822-ab9d-4aff-9a14-8263dd95be4c" />
+
+#### Function Response (JSON Output)
+
 ### RESULT:
 The currency exchange function was successfully integrated with the Chat Completion System using the Function Calling feature of an LLM. The model correctly identified the required function, passed the appropriate parameter, executed the Python function, and returned the exchange rate as a structured JSON response.
