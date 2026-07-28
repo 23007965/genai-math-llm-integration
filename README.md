@@ -65,8 +65,49 @@ functions = [
     }
 ]
 ```
-
-
+```python
+messages = [
+    {
+        "role": "user",
+        "content": "What is the exchange rate of USD?"
+    }
+]
+```
+```python
+import openai
+```
+```python
+response = openai.ChatCompletion.create(
+    model="gpt-3.5-turbo",
+    messages=messages,
+    functions=functions
+)
+```
+```python
+print(response)
+```
+```python
+response_message = response["choices"][0]["message"]
+```
+```python
+response_message
+```
+```python
+response_message["content"]
+```
+```python
+response_message["function_call"]
+```
+```python
+json.loads(response_message["function_call"]["arguments"])
+```
+```python
+args = json.loads(response_message["function_call"]["arguments"])
+```
+```python
+function_response = get_exchange_rate(**args)
+print(function_response)
+```
 ### OUTPUT:
 
 ### RESULT:
