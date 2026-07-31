@@ -18,6 +18,10 @@ Create a Python function get_exchange_rate(currency) that stores sample exchange
 Define the function schema, send the user's query to the Chat Completion API, allow the LLM to invoke the appropriate function, parse the function arguments, execute the Python function, and display the JSON response.
 
 ### PROGRAM:
+```
+Name : P PARTHIBAN
+Register number : 212223230145
+```
 ```python
 import os
 import openai
@@ -121,6 +125,7 @@ print(function_response)
 <img width="573" height="71" alt="GENAI3" src="https://github.com/user-attachments/assets/861d3822-ab9d-4aff-9a14-8263dd95be4c" />
 
 #### Function Response (JSON Output)
+<img width="751" height="44" alt="GENAI4" src="https://github.com/user-attachments/assets/a1a5c387-88d0-4a6b-a3bb-1929dcca61dd" />
 
 ### RESULT:
 The currency exchange function was successfully integrated with the Chat Completion System using the Function Calling feature of an LLM. The model correctly identified the required function, passed the appropriate parameter, executed the Python function, and returned the exchange rate as a structured JSON response.
