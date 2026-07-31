@@ -114,17 +114,16 @@ print(function_response)
 ```
 ### OUTPUT:
 
-OpenAI API Response
-
+#### OpenAI API Response
 <img width="1005" height="691" alt="GENAI1" src="https://github.com/user-attachments/assets/91894fd6-897e-43cb-a0f3-66a4923350dc" />
 
-Assistant Message with Function Call
+#### Assistant Message with Function Call
 <img width="650" height="177" alt="GENAI2" src="https://github.com/user-attachments/assets/b42459b3-8916-4d60-a50c-4371be39726d" />
 
-Extracted Function Call Details
+#### Extracted Function Call Details
 <img width="573" height="71" alt="GENAI3" src="https://github.com/user-attachments/assets/861d3822-ab9d-4aff-9a14-8263dd95be4c" />
 
-Function Response (JSON Output)
+#### Function Response (JSON Output)
 <img width="751" height="44" alt="GENAI4" src="https://github.com/user-attachments/assets/a1a5c387-88d0-4a6b-a3bb-1929dcca61dd" />
 
 ### RESULT:
